@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+#loren-epsom {
+    background-color: aqua;
+    margin-top: 10px;
+}
+
+body {
+    background-color: #F8F9FA;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*----Preloader----*/
+
+#preloader {
+    background-color: #EAEEF0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#status {
+    background-image: url("pre.gif");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 86px;
+    height: 81px;
+    top: 50%;
+    left: 50%;
+    margin-top: -43px;
+    margin-left: -39px;
+}
+
+nav {
+    width: 100%;
+    background-color: #d5e1df;
+}
+
+nav ul {
+    list-style: none;
+    float: left;
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px;
+    color: black;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li ul li {
+    display: block;
+    position: absolute;
+    background-color: brown;
+}
+
+.carousel-item {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-caption p {
+    width: 75%;
+    margin: auto;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand {
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}

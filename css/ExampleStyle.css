@@ -1,0 +1,475 @@
+html,
+body {
+	width: 100%;
+}
+
+body {
+	color: #212226;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Raleyway", sans-serif;
+}
+
+p {
+	font-family: "Open Sans", sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+
+/*navbar*/
+.navbar{
+	padding: 20px;
+}
+#menu-nav li a:hover{
+	color: #c1502e;
+	
+}
+/* transperent navigation bar on scroll*/
+#trans-nav-bar{
+	color: rgba(192,192,192,0.3);
+	padding: 10px 0;
+	-webkit-box-shadow: 0 8px 6px -9px #999;
+	box-shadow: 0 8px 6px -9px #999;
+	z-index: 2;
+}
+
+#loading {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #C0C0C0 url('pre.gif') no-repeat center;
+	z-index: 9999;
+
+
+
+}
+
+/*meet chess pieces*/
+
+#chess-item h5 {
+	margin-right: 20px;
+}
+
+section {
+	background: #fff;
+	overflow: hidden;
+}
+
+#home {
+
+	width: 100%;
+}
+
+#home p {
+	color: white;
+	font-size: 25px;
+	font-family: fantasy sans-serif;
+}
+
+/*------ABOUT SECTION-------*/
+/* #about {
+    background-color: #F1F1F1;
+}*/
+/*------Content Boxes-------*/
+.content-box-lg {
+	padding: 120px 0px;
+
+}
+
+.content-box-md {
+	padding: 100px 0;
+
+}
+
+
+
+
+/*------Chess Move-------*/
+
+
+
+
+/*------ Vertical Heading-------*/
+
+.vertical-heading h5 {
+	color: #588c7e;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	word-spacing: 4px;
+	display: inline-block;
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	position: relative;
+	top: 30px;
+	left: -75px;
+
+}
+
+.vertical-heading h2 {
+	margin: 0 0 0 30px;
+	font-size: 42px;
+	font-weight: 100;
+	line-height: 45px;
+}
+
+/*------ Horizontal Heading-------*/
+
+.horizontal-heading {
+	margin-bottom: 80px;
+}
+
+.horizontal-heading h5 {
+	font-size: 20px;
+	color: #070719;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 10px;
+
+}
+
+.horizontal-heading h2 {
+	font-size: 42px;
+	line-height: 45px;
+	font-weight: 100;
+	margin: 0;
+}
+
+/*------BUTTON-------*/
+.btn-general {
+	font-family: "Raleway"sans-serif;
+	border-radius: 28px;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin: 0 6px;
+	padding: 12px 46px 12px 46px;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+
+}
+
+
+/*------ About 1-------*/
+
+#about-right p:first-child {
+	margin-bottom: 30px;
+
+}
+
+#about-bottom {
+	margin-top: 60px;
+}
+
+#about-bottom img {
+	margin: 0 auto;
+
+}
+
+.vertical-heading p {
+	margin: 50px 20px;
+}
+
+#link ul {
+	list-style-type: none;
+}
+
+/*------ Chess Statement-------*/
+#statement {
+	background: url("../image/statement.jpg")no-repeat fixed center;
+	background-size: cover;
+	/* background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;*/
+}
+
+#statement .content-box-bg {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+#chess-statement h3 {
+	color: #fff;
+	font-size: 28px;
+	line-height: 45px;
+
+}
+
+#chess-statement p {
+	font-style: bold;
+	font-size: 14px;
+	color: #000000;
+	margin-top: 10px;
+}
+
+/*chessrule-part1*/
+#chess-rules-1 img {
+	margin: 30px 0;
+
+}
+
+.rule {
+	margin: 0;
+}
+
+#rule-border {
+	border-bottom: 1px solid #909090;
+}
+
+.rule-border {
+	border-bottom: 1px solid #909090;
+	margin-top: 28px;
+}
+
+#special-rule {
+	border-bottom: 1px solid #909090;
+
+}
+
+#margin {
+	margin: 5px 0;
+}
+
+.rule .icon {
+	font-size: 42px;
+	margin: 0;
+	-webkit-transition: all 400ms linear;
+	transition: all 400ms linear;
+
+}
+
+.rule:hover .icon {
+	color: #80ced6;
+	-webkit-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.rule:hover h3 {
+	color: #80ced6;
+}
+
+.rule h3 {
+	color: #212226;
+	margin: 0 0 6px 0;
+}
+
+.rule p {
+	line-height: 24px;
+	margin-top: 10px;
+
+}
+
+
+
+/*Ranking Section*/
+#rank1 {
+	border-bottom: 1px solid #909090;
+}
+
+#rank1 img {
+	margin-bottom: 20px;
+}
+
+/*Blog Section*/
+
+#blog {
+	background: #f4f4f4;
+}
+
+#blog-left p {
+	margin: 25px 0;
+
+}
+
+.blog-right h6 {
+	font-size: 20px;
+	font-weight: 700;
+	margin-top: 20px;
+	text-align: center;
+	vertical-align: center;
+
+	border-bottom: 1px solid #e6e2d3;
+
+}
+
+.blog-right h4 {
+	font-size: 20px;
+	text-align: center;
+}
+
+#use-link {
+	text-align: center;
+
+}
+
+
+.blog-post {
+	background: #fff;
+	padding: 20px;
+	-wekit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+
+
+}
+
+.blog-post h4 {
+	line-height: 40px;
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+}
+
+.blog-post > p {
+	line-height: 24px;
+	margin: 0;
+	font-weight: 100;
+	font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.blog-post a {
+	display: inline-block;
+	margin-top: 15px;
+	text-transform: uppercase;
+	font-family: "Raleway"sans-serif;
+	color: #80ced6;
+	font-size: 15px;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.blog-post a:hover {
+	color: #034f84;
+}
+
+#hover-blog-1:hover {
+	background-color: #454140;
+	color: aliceblue;
+
+}
+
+#hover-blog-2:hover {
+	background-color: #454140;
+	color: aliceblue
+}
+
+.post-meta {
+	border-top: 1px solid #e0e0e0;
+	margin-top: 30px;
+	padding-top: 10px;
+
+}
+
+.post-meta i {
+	margin-right: 5px;
+}
+
+.post-meta p {
+	font-family: "Raleway"sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: 500;
+	margin: 0;
+}
+
+
+
+/*  Newsletter */
+#newsletter {
+	text-align: center;
+	margin-top: 10px;
+
+}
+
+#head-news p:first-child {
+
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+	font-size: 22px;
+
+
+}
+
+#contact-form p {
+	text-align: center;
+	text-decoration: underline;
+}
+
+.button {
+	border-radius: 6px;
+	width: 100%;
+	height: 42px;
+	font-size: 18px;
+	background: #343A40;
+	color: white;
+	display: inline-block;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin-top: 8px;
+}
+
+/*Footer*/
+footer {
+	background: #212226;
+	padding: 30px;
+	color: white;
+}
+
+footer p {
+	color: white;
+	line-height: 20px;
+	letter-spacing: 2px;
+}
+
+footer p span {
+	color: #6666FF;
+}
+
+/*  back to top*/
+
+#btn-back-to-top{
+	display: none;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+	padding-left: 10px;
+	font-size: 40px;
+	padding: 3px 15px;
+	border-radius: 4px;
+	background-color: #B0E0E6;
+	font-size: 34px;
+	
+}
+#btn-back-to-top i:hover{
+		-webkit-transform: translateY(-15%);
+			transform: translateY(-15%);
+		-webkit-transition: all 400ms linear;
+			transition: all 400ms linear;
+	
+}
+/* Scroll Spy*/
+#menu-nav li > a.active{
+	color: blue;
+	font-weight: 500;
+	
+}
+
+/* Animation */
+#rank1{
+	animation-duration: 1.5sec;
+	animation-delay: 1sec;
+}
+
+
