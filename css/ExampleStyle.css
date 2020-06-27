@@ -25,7 +25,7 @@ p {
 }
 
 
-/*navbar*/
+/*======--------NAVBAR-----=======*/
 .navbar{
 	padding: 30px 0 20px 0;
 }
@@ -64,6 +64,8 @@ p {
 .navabar-brand{
     padding: 13px 15px;
 }
+
+
 /* transperent navigation bar on scroll*/
 #trans-nav-bar{
 	color: rgba(192,192,192,0.9);

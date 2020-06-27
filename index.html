@@ -1,44 +1,111 @@
 <html>
 
 <head>
-	<title>GrandMaster</title>
+    <title>GrandMaster</title>
 
-	<!--font awesome-->
-	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
-	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 
-	<!--Bootstrap-->
-	<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-	
-	<!--Bootstrap-->
-	<link type="text/css" rel="stylesheet" href="css/responsive-tabs/responsive-tabs.css" />
-	
-	<!--goole font-->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
-	
-	<!-- Animate CSS-->
-	  <link rel="stylesheet" href="css/animate/animate.css">
-	<!-- CSS-->
-	<link rel="stylesheet" type="text/css" href="css/ExampleStyle.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
 
-	<!--GrandMaster logo-->
-	<link rel="icon" type="" src="image/1.png">
+    <!--Bootstrap-->
+    <link type="text/css" rel="stylesheet" href="css/responsive-tabs/responsive-tabs.css" />
+
+    <!--goole font-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+
+    <!-- Animate CSS-->
+    <link rel="stylesheet" href="css/animate/animate.css">
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="css/ExampleStyle.css">
+
+    <!-- Responsive CSS-->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <!--GrandMaster logo-->
+    <link rel="icon" type="" src="image/1.png">
 </head>
 
 <body onload="loadFun()" data-spy="scroll" data-target=".navbar" data-offset="50">
-	<div id="loading"></div>
-      
-<header>
-    <nav class="navbar fixed-top navbar-expand-lg">
-        <div class="container-fluid">
+    <div id="loading"></div>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" id="white-nav-top">
+            <div class="container-fluid close-btn">
+                    <!--mobile menu open button-->
+                    <span id="mobile-nav-open-btn">
+                        &#9776;
+                    </span>
+                    <!--logo-->
+                    <a class="navabar-brand" href="#home">
+                        <img src="image/1.png" alt="logo" width="50px" height="50px">
+                    </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--main menu-->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav pull-right">
+                            <li class="nav-item">
+                                <a href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#blog">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#more">More</a>
+                            </li>
+                        </ul>
+                    </div>
+                <!--mobile menu-->
+                <div class="mobile-nav">
+                    <!--mobile menu close btn-->
+                    <span id="mobile-nav-close-btn">&#9932;</span>
+                    <div class="mobile-nav-content">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#blog">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#more">More</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+
+
+
+<!--
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+                <!--mobile menu open button--
+            <span id="mobile-nav-open-btn">
+                <i class="fa fa-bars"></i>
+            </span>
+            
             <div class="navbar-header">
-                <!--logo-->
+                <!--logo--
                 <a class="navabar-brand" href="#home">
                     <img src="image/1.png" alt="logo" width="100px" height="50px">
                 </a>
             </div>
-            <div class="container pull-right">
+            <div class="container">
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav">
                     <li>
@@ -55,6 +122,27 @@
                     </li>
                 </ul>
             </div>
+            </div>
+            <!--mobile menu--
+            <div class="mobile-nav">
+               <!--mobile menu close btn--
+                <span id="mobile-nav-close-btn"> <i class="fa fa-times"></i></span>
+                <div class="mobile-nav-content">
+                    <ul class="nav">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">More</a>
+                        </li>    
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -96,10 +184,10 @@
        </div>
         
     </nav>
-</header>-->	
-	
-<!--old nav start-->
-<!--
+</header>-->
+
+                <!--old nav start-->
+                <!--
 	<div class="container">
 		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light text-center " id="trans-nav-bar">
 			<div class="navbar-header">
@@ -135,1145 +223,1157 @@
 		</nav>
 	</div>
 	-->
-	<!-- End of old nav-->
-
-	<!-- Caresoul-->
-	<section id="home">
-		<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-				<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="image/1.jpg" class="d-block w-100" alt="...">
-					<div class="carousel-caption d-none d-md-block">
-						<p style="color: #5c8d89;">“Play the opening like a book, the middlegame like a magician, and the endgame like a machine”</p>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<img src="image/2.jpg" class="d-block w-100" alt="...">
-					<div class="carousel-caption d-none d-md-block">
-						<p style="color: #5c8d89;">“If you are not big enough to lose, you are not big enough to win”</p>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<img src="image/3.jpg" class="d-block w-100" alt="...">
-					<div class="carousel-caption d-none d-md-block">
-						<p style="color: #5c8d89;">“You must never let your opponent see your pieces and figure your strategy”</p>
-					</div>
-				</div>
-			</div>
-			<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-	</section>
-	<!-- End Caresoul-->
-
-	<!-- About Start-->
-	<div class="container">
-		<section id="about">
-			<!-- part1 -->
-			<div id="about-1">
-				<div class="content-box-lg">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<!--left side about-->
-								<div id="about-left">
-									<div class="vertical-heading">
-										<h5>Story of Chess</h5>
-										<h2 class="wow bounceInLeft">A<strong> History</strong> About Chess</h2>
-									</div>
-								</div>
-							</div>
-							<!--right side about-->
-							<div class="col-md-6">
-								<div id="about-right">
-									<p>The history of chess goes back almost 1500 years. The game originated in <b>northern India in the 6th century AD and spread to Persia</b>. When the Arabs conquered Persia, chess was taken up by the Muslim world and subsequently, through the Moorish conquest of Spain, spread to Southern Europe. But in early Russia, the game came directly from the Khanates (muslim territories) to the south.</p>
-									<p>In Europe, the moves of the pieces changed in the 15th century. The modern game starts with these changes. In the second half of the 19th century, modern tournament play began. Chess clocks were first used in 1883, and the first world chess championship was held in 1886. The 20th century saw advances in chess theory, and the establishment of the World Chess Federation (FIDE). Chess engines (programs that play chess), and chess data bases became important.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-
-	<!-- About Chess Pieces-->
-	<div class="container">
-		<section id="chess-item">
-			<div class="content-box-lg">
-				<div class="first-row">
-					<div class="container">
-						<div class="row">
-							<!--left side-->
-							<div class="col-md-6">
-								<div id="piece-left">
-									<div class="vertical-heading">
-										<h5>About Chess Pieces</h5>
-										<h2 class="wow bounceInLeft">Meet The <strong>Chess Pieces</strong></h2>
-										<p>A chess piece, or chessman, is any of the six different types of movable objects used on a chessboard to play the game of chess.
-											In the first context, each of the two players begins with the following sixteen pieces in a standard game:<br />
-											<strong>
-												1 king ,1 queen<br />
-												2 rooks ,2 bishops<br />
-												2 knights ,8 pawns<br />
-											</strong></p>
-									</div>
-								</div>
-							</div>
-
-
-							<!--chess item caresoul-->
-							<div class="col-md-6">
-								<div id="right-caresoul">
-
-									<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-										<ol class="carousel-indicators">
-											<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-											<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-											<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-											<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-											<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-											<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-										</ol>
-										<div class="carousel-inner">
-											<div class="carousel-item active">
-												<img class="d-block w-100" src="image/king1.png" alt="First slide">
-												<div class="carousel-caption d-none d-md-block">
-													<h5>King</h5>
-												</div>
-											</div>
-											<div class="carousel-item">
-												<img class="d-block w-100" src="image/queen1.png" alt="Second slide">
-												<div class="carousel-caption d-none d-md-block">
-													<h5>Queen</h5>
-												</div>
-											</div>
-											<div class="carousel-item">
-												<img class="d-block w-100" src="image/rook.jpg" alt="Third slide">
-												<div class="carousel-caption d-none d-md-block">
-													<h5>Rook</h5>
-												</div>
-											</div>
-											<div class="carousel-item">
-												<img class="d-block w-100" src="image/bish.png" alt="Forth slide">
-												<div class="carousel-caption d-none d-md-block">
-													<h5>Bishop</h5>
-												</div>
-											</div>
-											<div class="carousel-item">
-												<img class="d-block w-100" src="image/knight.jpg" alt="Fifth slide">
-												<div class="carousel-caption d-none d-md-block">
-													<h5>Knight</h5>
-												</div>
-											</div>
-											<div class="carousel-item">
-												<img class="d-block w-100" src="image/pawn.jpg" alt="Sixth slide">
-												<div class="carousel-caption d-none d-md-block">
-													<h5>Pawn</h5>
-												</div>
-											</div>
-										</div>
-
-										<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="sr-only">Previous</span>
-										</a>
-										<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="sr-only">Next</span>
-										</a>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</section>
-	</div>
-
-	<!-- Start Statement Section-->
-	<section id="statement">
-		<div class="content-box-lg">
-
-			<div class="container">
-
-				<div class="row">
-
-					<div class="col-md-12">
-
-						<div id="chess-statement" class="text-center">
-							<h3 class="wow fadeIn"><i class="fa fa-quote-left"></i> In chess, knowledge is a very transient thing.<br /> It changes so fast that even a single mouse-slip sometimes changes the evaluation <i class="fa fa-quote-right"></i></h3>
-							<p style="color: #fff ;">- Viswanathan Anand -</p>
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-		<!-- End Statement Section-->
-
-	</section>
-
-	<!-- Start Chess Rules -->
-	<section id="chess-rules">
-		<!--chessrule-part1-->
-		<div id="chess-rules-1">
-
-			<div class="content-box-lg">
-
-				<div class="container">
-
-					<div class="row">
-
-						<div class="col-md-12 text-center">
-							<div class="horizontal-heading">
-								<h5>Chess Rules</h5>
-								<h2 class="wow bounceInDown" data-wow-duration="1s" ><strong>General Chess Rules</strong></h2>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="row">
-
-						<!--left side-->
-						<div class="col-md-7">
-							<img src="image/chess-rule.png" alt="rule" class="img-fluid wow bounceInLeft" data-wow-duration="2.5s">
-
-						</div>
-
-						<!--right side-->
-						<div class="col-md-5">
-
-							<!--Rule 1-->
-							<div class="rule" id="margin">
-								<div class="row">
-									<div class="col-md-2">
-										<div class="icon text-right">
-											<i class="fa fa-crosshairs wow bounceInRight"></i>
-										</div>
-									</div>
-									<div class="col-md-10 wow bounceInRight" id="rule-border" data-wow-duration="2s">
-										<h3>Rule 1</h3>
-										<p>White is always first to move and players take turns alternately moving one piece at a time. Movement is required. If a player´s turn is to move, he is not in check but has no legal moves, this situation is called “Stalemate” and it ends the game in a draw.</p>
-									</div>
-								</div>
-							</div>
-
-
-							<!--Rule 2-->
-							<div class="rule" id="margin">
-								<div class="row">
-									<div class="col-md-2">
-										<div class="icon text-right">
-											<i class="fa fa-crosshairs wow bounceInRight"></i>
-										</div>
-									</div>
-									<div class="col-md-10  wow bounceInRight" id="rule-border" data-wow-duration="2s">
-										<h3>Rule 2</h3>
-										<p>Each type of piece has its own method of movement. A piece may be moved to another position or may capture an opponent´s piece, replacing on its square (en passant being the only exception).</p>
-									</div>
-								</div>
-							</div>
-
-
-							<!--Rule 3-->
-							<div class="rule" id="margin">
-								<div class="row">
-									<div class="col-md-2">
-										<div class="icon text-right">
-											<i class="fa fa-crosshairs wow bounceInRight"></i>
-										</div>
-									</div>
-									<div class="col-md-10  wow bounceInRight" data-wow-duration="2s">
-										<h3>Rule 3</h3>
-										<p>When a king is threatened with capture (but can protect himself or escape), it´s called check. If a king is in check, then the player must make a move that eliminates the threat of capture and cannot leave the king in check.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="row">
-
-						<div class="col-md-12 text-center">
-							<div class="horizontal-heading">
-								<h2 class="wow bounceInDown" data-wow-duration="1s"><strong>Special Chess Rules</strong></h2>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="row">
-
-						<!--left side-->
-						<div class="col-md-7">
-							<img src="image/gif/castling1.gif" alt="rule" class="img-fluid"><br/><br/><br/><br/><br/>
-							<img src="image/gif/en_passant.gif" alt="rule" class="img-fluid"><br/><br/>
-							<img src="image/gif/promotion1.gif" alt="rule" class="img-fluid">
-
-						</div>
-
-						<!--right side-->
-						<div class="col-md-5">
-
-							<!--Rule 4-->
-							<div class="rule">
-								<div class="row">
-									<div class="col-md-2">
-
-										<div class="icon text-right">
-											<i class="fa fa-crosshairs wow bounceInRight"></i>
-										</div>
-									</div>
-									<div class="col-md-10 wow bounceInRight" id="special-rule" data-wow-duration="2s">
-
-										<h3>Castling</h3>
-										<p>
-											During the castling, the king moves two squares towards the rook he intends to castle with, and the rook moves to the square through which the king passed.
-
-											Castling is only permissible if all of the following conditions hold:<br />
-
-											(1) Neither king nor rook involved in castling may have moved from the original position;
-											There must be no pieces between the king and the rook;<br />
-											(2) The king may not currently be in check, nor may the king pass through or end up in a square that is under attack by an enemy piece </p><br><br><br><br>
-									</div>
-								</div>
-							</div>
-
-
-							<!--Rule 5-->
-							<div class="rule">
-								<div class="row">
-									<div class="col-md-2">
-										<div class="icon text-right">
-											<i class="fa fa-crosshairs wow bounceInRight "></i>
-										</div>
-									</div>
-									<div class="col-md-10 wow bounceInRight" id="special-rule" data-wow-duration="2s">
-										<h3>En Passant</h3>
-										<p>En Passant may only occur when a pawn is moved two squares on its initial movement. When this happens, the opposing player has the option to take the moved pawn “en passant” as if it had only moved one square. This option, though, only stays open for one move.<br />
-											The En Passant move was developed after pawns were allowed to move more than one square on their initial move. The idea behind this rule was to retain restrictions imposed by slow movement, while at the same time speeding up the game.</p><br><br>
-									</div>
-								</div>
-							</div>
-
-
-							<!--Rule 3-->
-							<div class="rule">
-								<div class="row">
-									<div class="col-md-2">
-										<div class="icon text-right">
-											<i class="fa fa-crosshairs wow bounceInRight"></i>
-										</div>
-									</div>
-									<div class="col-md-10 wow bounceInRight" data-wow-duration="2s">
-										<h3>Pawn promotion</h3>
-										<p>If a pawn reaches the opponent´s edge of the table, it will be promoted – the pawn may be converted to a queen, rook, bishop or knight, as the player desires. The choice is not limited to previously captured pieces. Thus its´ theoretically possible having up to nine queens or up to ten rooks, bishops, or knights if all pawns are promoted.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-<!--End chessrule-part1-->
-
-
-		<!--Start chessrule-part2-->
-		<div id="chess-rules-1">
-
-			<div class="content-box-md">
-			
-				<!-- rule tab-1 -->
-				<div id="rule-tabs">
-
-					<div class="container">
-						<div class="row">
-
-							<div class="col-md-12 text-center">
-								<div class="horizontal-heading">
-									<h2 class="wow bounceInDown" data-wow-duration="1s"><strong>Chess Moves</strong></h2>
-								</div>
-							</div>
-
-						</div>
-						<div class="row">
-							<div class="col-md-6">
-								<img src="image/gif/king.gif" alt="king" class="img-fluid">
-							</div>
-							<div class="col-md-6">
-								<div class="tab-bg rule-border">
-									<h2>01</h2>
-									<h3>King</h3>
-									<p>King can move exactly one square horizontally, vertically, or diagonally. At most once in every game, each king is allowed to make a special move, known as castling.</p>
-									<div id="rule2-btn">
-										<a class="btn btn-outline-dark btn-rule" href="https://en.wikipedia.org/wiki/King_(chess)" title="know more" role="button">Know More</a>
-
-									</div><br/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- rule tab-2 -->
-				<div id="rule-tab-2" class="rule-tab">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<img src="image/gif/queen.gif" alt="queen" class="img-fluid">
-							</div>
-							<div class="col-md-6">
-								<div class="tab-bg rule-border">
-									<h2>02</h2>
-									<h3>Queen</h3>
-									<p>Queen can move any number of vacant squares diagonally, horizontally, or vertically.</p>
-									<div id="rule2-btn">
-										<a class="btn btn-outline-dark btn-rule" href="https://en.wikipedia.org/wiki/Queen_(chess)" title="know more" role="button">Know More</a>
-									</div><br/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- rule tab-3 -->
-				<div id="rule-tab-3" class="rule-tab">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<img src="image/gif/rook.gif" alt="rook" class="img-fluid">
-							</div>
-							<div class="col-md-6">
-								<div class="tab-bg rule-border">
-									<h2>03</h2>
-									<h3>Rook</h3>
-									<p>Rook can move any number of vacant squares vertically or horizontally. It also is moved while castling.</p>
-									<div id="rule2-btn">
-										<a class="btn btn-outline-dark btn-rule" href="https://en.wikipedia.org/wiki/Rook_(chess)" title="know more" role="button">Know More</a>
-									</div><br/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- rule tab-4 -->
-				<div id="rule-tab-4" class="rule-tab">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<img src="image/gif/bishop.gif" alt="bishop" class="img-fluid">
-							</div>
-							<div class="col-md-6">
-								<div class="tab-bg rule-border">
-									<h2>04</h2>
-									<h3>Bishop</h3>
-									<p>Bishop can move any number of vacant squares in any diagonal direction.</p>
-									<div id="rule2-btn">
-										<a class="btn btn-outline-dark btn-rule" href="https://en.wikipedia.org/wiki/Bishop_(chess)" title="know more" role="button">Know More</a>
-									</div><br/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- rule tab-5 -->
-				<div id="rule-tab-5" class="rule-tab">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<img src="image/gif/knight.gif" alt="knight" class="img-fluid">
-							</div>
-							<div class="col-md-6">
-								<div class="tab-bg rule-border">
-									<h2>05</h2>
-									<h3>Knight</h3>
-									<p>Knight can move one square along any rank or file and then at an angle. The knight´s movement can also be viewed as an “L” or “7″ laid out at any horizontal or vertical angle.</p>
-									<div id="rule2-btn">
-										<a class="btn btn-outline-dark btn-rule" href="https://en.wikipedia.org/wiki/Knight_(chess)" title="know more" role="button">Know More</a>
-									</div><br/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- rule tab-6 -->
-				<div id="rule-tab-6" class="rule-tab">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								<img src="image/gif/pown.gif" alt="pown" class="img-fluid">
-							</div>
-							<div class="col-md-6">
-								<div class="tab-bg rule-border">
-									<h2>06</h2>
-									<h3>Pawn</h3>
-									<p>Pawns can move forward one square, if that square is unoccupied. If it has not yet moved, the pawn has the option of moving two squares forward provided both squares in front of the pawn are unoccupied. A pawn cannot move backward. Pawns are the only pieces that capture differently from how they move. They can capture an enemy piece on either of the two spaces adjacent to the space in front of them (i.e., the two squares diagonally in front of them) but cannot move to these spaces if they are vacant. The pawn is also involved in the two special moves en passant and promotion.</p>
-									<div id="rule2-btn">
-										<a class="btn btn-outline-dark btn-rule" href="https://en.wikipedia.org/wiki/Pawn_(chess)" title="know more" role="button">Know More</a>
-									</div><br/>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-	</section>
-
-	<!-- Start Chess Rank  -->
-
-	<section id="ranking">
-
-		<div id="rank">
-			<div class="content-box-lg">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12 text-center">
-							<div class="horizontal-heading">
-								<h2 class="wow bounceInDown" data-wow-duration="1s">Chess Ranking</h2>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="row">
-						<div class="col-md-4">
-							<div class="vertical-heading">
-								<h5>Chess Ranking</h5>
-								<h2 class="wow bounceInLeft" data-wow-duration="2s"><strong>World Top 10</strong></h2>
-							</div>
-						</div>
-						<div class="col-md-8">
-
-							<div id="rank-slider">
-
-								<!--ranking1-->
-								<div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
-									<div id="rank1">
-										<div class="row">
-											<div class="col-md-6">
-												<h3>Magnus Carlsen</h3>
-											</div>
-											<div class="col-md-6">
-												<div class="number text-right ">
-													<i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">1</b>
-												</div>
-											</div>
-										</div>
-										<p>Magnus Carlsen is the current World Chess Champion. To many people, he’s the best to ever play the game, although Garry Kasparov and Bobby Fischer remain in the conversation. At any rate, the clear and remarkable point is that before turning 30 years old, Carlsen has already earned a spot at the...<a href="https://en.wikipedia.org/wiki/Magnus_Carlsen">know more</a></p>
-										<div class="author">
-											<div class="row">
-												<div class="col-md-4">
-													<img src="image/rank/1carlsen.jpg" alt="rank1" class="img-fluid img-rounded">
-												</div>
-												<div class="col-md-8">
-													<div class="author-name-des">
-														<p><b>Rating: 2872</b></p>
-														<p><b>Country: Norway</b></p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!--ranking 2-->
-								<div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
-									<div id="rank1">
-
-										<div class="row">
-											<div class="col-md-6">
-												<h3>Fabiano Caruana</h3>
-											</div>
-											<div class="col-md-6">
-												<div class="number text-right">
-													<i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">2</b>
-												</div>
-											</div>
-										</div>
-										<p>The prodigy who broke the record for Hikaru Nakamura of America's youngest chess grandmaster, Fabiano Caruana climbed the mountain of chess and reached the summit. This young great master has had a ranking as high as number 2 in the world and has won numerous tournaments in his career. In 2018, the American...<a href="https://en.wikipedia.org/wiki/Fabiano_Caruana">know more</a></p>
-										<div class="author">
-											<div class="row">
-												<div class="col-md-4">
-													<img src="image/rank/2fabiano.jpg" alt="rank1" class="img-fluid img-rounded">
-												</div>
-												<div class="col-md-8">
-													<div class="author-name-des">
-														<p><b>Rating: 2822</b></p>
-														<p><b>Country: United States</b></p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-								</div>
-
-								<!--ranking 3-->
-								<div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
-									<div id="rank1">
-										<div class="row">
-											<div class="col-md-6">
-												<h3>Ding Liren</h3>
-											</div>
-											<div class="col-md-6">
-												<div class="number text-right">
-													<i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">3</b>
-												</div>
-											</div>
-										</div>
-										<p>Ding Liren is a Chinese super grandmaster who many people consider to be a primary contender for Magnus Carlsen’s world title. Ding won his first Chinese Chess Championship at the age of 16, making him the youngest to ever do so. In the 2017 and 2019 Chess World Cup, he became the first player...<a href="https://en.wikipedia.org/wiki/Ding_Liren">know more</a></p>
-										<div class="author">
-											<div class="row">
-												<div class="col-md-4">
-													<img src="image/rank/3dinglaren.jpg" alt="rank1" class="img-fluid img-rounded">
-												</div>
-												<div class="col-md-8">
-													<div class="author-name-des">
-														<p><b>Rating: 2805</b></p>
-														<p><b>Country: China</b></p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!--ranking 4-->
-								<div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
-									<div id="rank1">
-										<div class="row">
-											<div class="col-md-6">
-												<h3>Alexander Grischuk</h3>
-											</div>
-											<div class="col-md-6">
-												<div class="number text-right">
-													<i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">4</b>
-												</div>
-											</div>
-										</div>
-										<p>Alexander Grischuk is a Russian super grandmaster who is consistently among the world’s best players. While he’s an elite professional chess player, Grischuk is well-known for being one of the top blitz players. He’s a three-time World Blitz Champion, making him only one of two players...<a href="https://en.wikipedia.org/wiki/Alexander_Grischuk">know more</a></p>
-										<div class="author">
-											<div class="row">
-												<div class="col-md-4">
-													<img src="image/rank/4alexander.jpg" alt="rank1" class="img-fluid img-rounded">
-												</div>
-												<div class="col-md-8">
-													<div class="author-name-des">
-														<p><b>Rating: 2777</b></p>
-														<p><b>Country: Russia</b></p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-								</div>
-
-								<!--ranking 5-->
-								<div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
-									<div id="rank1">
-										<div class="row">
-											<div class="col-md-6">
-												<h3>Ian Nepomniachtchi</h3>
-											</div>
-											<div class="col-md-6">
-												<div class="number text-right">
-													<i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">5</b>
-												</div>
-											</div>
-										</div>
-										<p>The Russian superstar Ian Nepomniachtchi is knocking on the door of the elite players in the world. Currently rated right inside of the top 30 players in the world, he has had great success in tournaments and did it in a fairly short amount of time. Having been born in the same year as elite super-GMs...<a href="https://en.wikipedia.org/wiki/Ian_Nepomniachtchi">know more</a></p>
-										<div class="author">
-											<div class="row">
-												<div class="col-md-4">
-													<img src="image/rank/5ian.jpg" alt="rank1" class="img-fluid img-rounded">
-												</div>
-												<div class="col-md-8">
-													<div class="author-name-des">
-														<p><b>Rating: 2774</b></p>
-														<p><b>Country: Russia</b></p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-								</div>
-
-								<!--ranking 6-->
-								<div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
-									<div id="rank1">
-										<div class="row">
-											<div class="col-md-6">
-												<h3>Levon Aronian</h3>
-											</div>
-											<div class="col-md-6">
-												<div class="number text-right">
-													<i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">6</b>
-												</div>
-											</div>
-										</div>
-										<p>Levon Aronian is an Armenian super grandmaster who has long been among the world’s best players. He first entered the top 20 in 2005 and still hasn’t lost that distinction. Most of those 15 years or so have been spent in the top 10. Aronian has been a model for steady, elite-level chess...<a href="https://en.wikipedia.org/wiki/Levon_Aronian">know more</a></p>
-										<div class="author">
-											<div class="row">
-												<div class="col-md-4">
-													<img src="image/rank/6levon.jpg" alt="rank1" class="img-fluid img-rounded">
-												</div>
-												<div class="col-md-8">
-													<div class="author-name-des">
-														<p><b>Rating: 2773</b></p>
-														<p><b>Country: Armenia</b></p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!--ranking 7-->
-								<div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
-									<div id="rank1">
-										<div class="row">
-											<div class="col-md-6">
-												<h3>Maxime Vachier-Lagrave</h3>
-											</div>
-											<div class="col-md-6">
-												<div class="number text-right">
-													<i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">7</b>
-												</div>
-											</div>
-										</div>
-										<p>
-											Maxime Vachier-Lagrave (also known as “MVL”) is a French super grandmaster who, since 2016, has spent plenty of time rated among the top five chess players in the world. His rating peaked at 2819 in August 2016, making him the seventh-highest rated player in history. Vachier-Lagrave is a...<a href="https://en.wikipedia.org/wiki/Maxime_Vachier-Lagrave">know more</a></p>
-										<div class="author">
-											<div class="row">
-												<div class="col-md-4">
-													<img src="image/rank/7maxi.jpg" alt="rank1" class="img-fluid img-rounded">
-												</div>
-												<div class="col-md-8">
-													<div class="author-name-des">
-														<p><b>Rating: 2770</b></p>
-														<p><b>Country: Azerbaijan</b></p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!--ranking 8-->
-								<div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
-									<div id="rank1">
-										<div class="row">
-											<div class="col-md-6">
-												<h3>Shakhriyar Mamedyarov</h3>
-											</div>
-											<div class="col-md-6">
-												<div class="number text-right">
-													<i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">8</b>
-												</div>
-											</div>
-										</div>
-										<p>As Azerbaijan’s top player, Grandmaster Shakhriyar Mamedyarov has ascended to become one of the elite chess players in the world. He started off when he was young and became the only player ever to win the World Junior Championship twice. But he didn’t stop there. is incredible chess strength...<a href="https://en.wikipedia.org/wiki/Shakhriyar_Mamedyarov">know more</a></p>
-										<div class="author">
-											<div class="row">
-												<div class="col-md-4">
-													<img src="image/rank/8shakh.jpg" alt="rank1" class="img-fluid img-rounded">
-												</div>
-												<div class="col-md-8">
-													<div class="author-name-des">
-														<p><b>Rating: 2768</b></p>
-														<p><b>Country: Netherlands</b></p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!--ranking 9-->
-								<div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
-									<div id="rank1">
-										<div class="row">
-											<div class="col-md-6">
-												<h3>Anish Giri</h3>
-											</div>
-											<div class="col-md-6">
-												<div class="number text-right">
-													<i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">9</b>
-												</div>
-											</div>
-										</div>
-										<p>Anish Giri is the Netherlands premier chess prodigy. Giri started to play chess at the age of 6 years old and became a FIDE Master in 2008 at the age of 14. Within a year of becoming a FIDE Master he became an International Grandmaster at the young age of 14 years, 7 months and 2 days in 2009. When...<a href="https://en.wikipedia.org/wiki/Anish_Giri">know more</a></p>
-										<div class="author">
-											<div class="row">
-												<div class="col-md-4">
-													<img src="image/rank/9anish.jpg" alt="rank1" class="img-fluid img-rounded">
-												</div>
-												<div class="col-md-8">
-													<div class="author-name-des">
-														<p><b>Rating: 2768</b></p>
-														<p><b>Country: Netherlands</b></p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!--ranking 10-->
-								<div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
-									<div id="rank1">
-										<div class="row">
-											<div class="col-md-6">
-												<h3>Wesley So</h3>
-											</div>
-											<div class="col-md-6">
-												<div class="number text-right">
-													<i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">10</b>
-												</div>
-											</div>
-										</div>
-										<p>Wesley So is a Filipino-American super grandmaster who is among the world’s best chess players. He began as a chess prodigy who entered tournaments at nine years old. At 14, he became the ninth youngest GM in history. The next year, he became the youngest player to pass the 2600 rating threshold,...<a href="https://en.wikipedia.org/wiki/Wesley_So">know more</a></p>
-										<div class="author">
-											<div class="row">
-												<div class="col-md-4">
-													<img src="image/rank/10wesley.jpg" alt="rank1" class="img-fluid img-rounded">
-												</div>
-												<div class="col-md-8">
-													<div class="author-name-des">
-														<p><b>Rating: 2765</b></p>
-														<p><b>Country: United State</b></p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</section>
-
-	<!--  Start Chess Blogs  -->
-
-	<section id="blog">
-		<div class="content-box-md">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-5">
-
-						<div id="blog-left">
-
-							<div class="vertical-heading">
-								<h5>Latest News</h5>
-								<h2 class="wow bounceInLeft" data-wow-duration="1s">Latest<br />From<strong> Blog</strong></h2>
-							</div>
-							<p style="font-family:'Montserrat', sans-serif;">What's the most fun you've had with a chess variant? Perhaps like me, it's playing bughouse, which is not only innately fascinating, but a good way to make friends and interact with people who are not solely interested in taking all of your elo points.</p>
-							<div class="blog-btn">
-								<a href="https://www.chess.com/blogs" class="btn btn-dark" role="button">View All Posts</a>
-
-							</div>
-
-						</div>
-					</div>
-
-
-
-					<div class="col-md-7">
-
-						<div class="blog-right">
-							<div class="row">
-
-								<!--blog post 1-->
-								<div class="col-md-6 blog-post wow flipInX " id="hover-blog-1" data-wow-duration="2s">
-									<h4>The Top 10 Chess Games of the 2010s! </h4>
-									<p>The 2010s were an AMAZING decade for chess. Magnus Carlsen dominated the majority of the decade and made a strong case that he is the greatest chess player of all time. If he is as dominant in the 2020s as he was in the 2010s, there will be zero doubt that he is the greatest chess player of all time...</p>
-									<a href="https://www.chess.com/blog/SamCopeland/the-top-10-chess-games-of-the-2010s-and-honorable-mentions">Read More ></a>
-									<div class="row">
-
-										<div class="col-md-6 post-meta">
-											<p><i class="fa fa-user"></i> SamCopeland
-											</p>
-										</div>
-										<div class="col-md-6 post-meta">
-											<p class="text-center">Jan 8, 2020</p>
-										</div>
-									</div>
-
-								</div>
-								<!--blog post 2-->
-								<div class="col-md-6 blog-post wow flipInX" id="hover-blog-2" data-wow-duration="2s">
-									<h4>Learn chess and help contribute to science in the process!</h4>
-									<p>Hi! Thanks for stopping by to check out this experiment. My name is Elliot and I’m a third year psych student at Cal State Northridge. I’m interested in researching how our thoughts and feelings impact our gaming experience.</p>
-									<a href="https://www.chess.com/blog/ecuite/learn-chess-and-help-contribute-to-science-in-the-process-1">Read More ></a>
-
-									<div class="row">
-										<div class="col-md-6 post-meta">
-											<p><i class="fa fa-user"></i> ecuite
-											</p>
-										</div>
-										<div class="col-md-6 post-meta">
-											<p class="text-center">Jan 9, 2020</p>
-										</div>
-									</div>
-
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<!-- End -->
-	</section>
-
-
-
-	<!--  Start More  -->
-
-	<section id="more">
-		<div class="content-box-md">
-			<div class="container">
-				<div class="">
-					<div class="col-md-12">
-						<div class="horizontal-heading text-center">
-							<h2 class="wow bounceInDown" data-wow-duration="1s">Chess Tips</h2>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-
-					<div class="col-md-5">
-
-						<div id="more-left">
-
-							<div class="card" style="width: 18rem;">
-								<div class="card-body">
-									<h5 class="card-title"><i class="fa fa-hashtag"></i><b>1</b></h5>
-									<h6 class="card-subtitle mb-2 text-muted">LEARN THE MOVES</h6>
-									<p class="card-text">Each chess piece can move only a certain way. For instance, a pawn moves straight ahead but can only attack on an angle, one square at a time. A knight’s move is L-shaped. The bishop moves at an angle but can move more than one square at a time. The rook (castle) can move only in a straight line but can go forward, back or to the side. The queen, the most powerful piece, can move in any direction for any number of squares, but not two directions in one move. And the king moves at a stately pace — as a king should — one square at a time in any direction.</p>
-									<a href="#" class="card-link">Know More</a>
-								</div>
-							</div>
-
-							<div class="card" style="width: 18rem;">
-								<div class="card-body">
-									<h5 class="card-title"><i class="fa fa-hashtag"></i><b>2</b></h5>
-									<h6 class="card-subtitle mb-2 text-muted">OPEN WITH A PAWN</h6>
-									<p class="card-text">Move the pawn in front of either the king or queen two squares forward. (Only on its opening move can a pawn move two squares.) This opens pathways for your bishops and queen to enter the game. They move on an angle and can’t get out onto the field of battle if pawns are in the way..</p>
-									<a href="https://boyslife.org/hobbies-projects/funstuff/5486/10-tips-to-become-a-chess-champ/" class="btn btn-dark">View More</a>
-
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="col-md-7">
-
-						<div class="blog-right">
-							<div class="row">
-
-								<!--More 1-->
-								<div class="col-md-6 blog-post">
-
-									<div class="vertical-heading">
-										<h4 style="color: blue; border-bottom: 1px solid #6c757d">Useful Links</h4>
-									</div>
-									
-									
-										<h6>Tournament Links:</h6>
-										<p>
-											<a href="www.uschess.org"><center>www.uschess.org</center></a>
-										</p>
-										<p>
-											<a href="www.chessintheschools.org"><center>www.chessintheschools.org</center></a>
-										</p>
-									
-										<h6>More Chess Programs:</h6>
-										<p>
-											<a href="www.lichessmates.com"><center>www.lichessmates.com</center></a>
-										</p>
-										<p>
-											<a href="www.lichesskids.com "><center>www.lichesskids.com</center></a>
-										</p>
-									
-										<h6>Online Chess:</h6>
-										<p>
-											<a href="www.chess.com"><center>www.chess.com</center></a>
-										</p>
-										<p>
-											<a href="www.chesskid.com"><center>www.chesskid.com</center></a>
-										</p>
-									
-										<h6>Chess News:</h6>
-										<p>
-											<a href="www.chessbase.com"><center>www.chessbase.com</center></a>
-										</p>
-									</div>
-
-
-								<!--More 2-->
-								<div class="col-md-6 blog-post">
-								
-										<div id="head-news">
-										  <center><i class="fa fa-envelope fa-4x wow swing infinite" data-wow-duration="2s"></i></center>
-											<p style="text-transform: uppercase; text-align: center;margin-top: 10px; font-family:Montserrat; font-weight: 1000">join our newsletter</p>
-											<p id="newsletter">Subscribe Our newsletter to receive the latest news and update of chess world every week.<br/> No Spam 
-											</p>
-										</div>
-									
-									
-									<!--Contact form-->
-									<div id="contact-form">
-										<form autocomplete="on" action="#">
-											<div class="row">
-												<div class="col-md-12">
-													
-											   	<input type="text" class="form-control" placeholder="Enter your email">
-												   
-												<button class="button wow pulse infinite" style="vertical-align:middle" data-wow-duration="3s" onclick="myFunction()"><span>SUBSCRIBE</span></button>
-												   
-												</div>
-											</div>
-											<p ><a href="#">no thanks</a></p>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End -->
-	</section>
-
-	<!-- Footer -->
-
-	   <footer class="text-center">
-            <div class="container">
-                <div class="row">
-                   <div class="col-md-12">
-                        <div class="item">
-                            <div class="col-lg-12">
-                           		<div class="copy text-center">
-                               		<div class="social">
-                                    	<a href="https:facebook.com/raj.c.lanjewar" class="icon">
-                                        <i class="fa fa-facebook-f"></i>
-                                    	</a>&nbsp;
-                                   		 <a href="https://github.com/lanjewarraj" class="icon">
-                                        <i class="fa fa-github"></i>
-                                   		 </a>&nbsp;
-                                    	<a href="https://www.linkedin.com/in/raj-lanjewar-876b11164/" class="icon">
-                                        <i class="fa fa-linkedin"></i>
-                                   		 </a>&nbsp;
-                                    	<a href="https://www.instagram.com" class="icon">
-                                        <i class="fa fa-instagram"></i>
-                                    	</a>&nbsp;
-                                      	<a href="https://www.yutube.com/rajlanjewar" class="icon">
-                                        <i class="fa fa-youtube"></i>
-                                    	</a>
-                               		</div>
-                              	 		<p>Copyright &copy; 2020 All Right Reserved By<span> Raj C Lanjewar</span></p>
-                           		</div>
-                        	</div>
-                    	</div>
-               		 </div>
-            	</div>
-        	</div>
-    	</footer>
-
-	<!--  End Footer -->
-	
-	<!-- Back to top -->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div id="btn-back-to-top">
-					<a href="#home"><i class="fa fa-angle-double-up "></i></a>
-				</div> 
-			</div>
-		</div>
-	</div>
-	
-	
-	<!--End Back to top -->
-
-
-	<script>
-		var loader = document.getElementById('loading');
-
-		function loadFun() {
-			loader.style.display = "none";
-		}
-	</script>
-	
-	<!--jquery-->
-	<script src="js/jquery.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-
-	<!--responsive tabs-->
-	<script src="js/responsive-tabs/jquery.responsiveTabs.min.js"></script>
-
-
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-
-	<!--bootstrap js-->
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-	
-	<!-- wow js -->
-	<script src="js/wow/wow.min.js"></script>
-    <script>
-    	new WOW().init();
-    </script>
-    
-	<!--custom js-->
-	<script src="js/script.js">
-		
-	</script>
-	<script>
-	function myFunction(){
-		alert("Thanks For Subscribing Newsletter");
-	}
-	</script>
-
-</body>
-
-</html>
+                <!-- End of old nav-->
+
+                <!-- Caresoul-->
+                <section id="home">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="image/1.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p style="color: #5c8d89;">“Play the opening like a book, the middlegame like a magician, and the endgame like a machine”</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p style="color: #5c8d89;">“If you are not big enough to lose, you are not big enough to win”</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p style="color: #5c8d89;">“You must never let your opponent see your pieces and figure your strategy”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </section>
+                <!-- End Caresoul-->
+
+                <!-- About Start-->
+                <div class="container">
+                    <section id="about">
+                        <!-- part1 -->
+                        <div id="about-1">
+                            <div class="content-box-lg">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <!--left side about-->
+                                            <div id="about-left">
+                                                <div class="vertical-heading">
+                                                    <h5>Story of Chess</h5>
+                                                    <h2 class="wow bounceInLeft">A<strong> History</strong> About Chess</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--right side about-->
+                                        <div class="col-md-6">
+                                            <div id="about-right">
+                                                <p>The history of chess goes back almost 1500 years. The game originated in <b>northern India in the 6th century AD and spread to Persia</b>. When the Arabs conquered Persia, chess was taken up by the Muslim world and subsequently, through the Moorish conquest of Spain, spread to Southern Europe. But in early Russia, the game came directly from the Khanates (muslim territories) to the south.</p>
+                                                <p>In Europe, the moves of the pieces changed in the 15th century. The modern game starts with these changes. In the second half of the 19th century, modern tournament play began. Chess clocks were first used in 1883, and the first world chess championship was held in 1886. The 20th century saw advances in chess theory, and the establishment of the World Chess Federation (FIDE). Chess engines (programs that play chess), and chess data bases became important.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- About Chess Pieces-->
+                <div class="container">
+                    <section id="chess-item">
+                        <div class="content-box-lg">
+                            <div class="first-row">
+                                <div class="container">
+                                    <div class="row">
+                                        <!--left side-->
+                                        <div class="col-md-6">
+                                            <div id="piece-left">
+                                                <div class="vertical-heading">
+                                                    <h5>About Chess Pieces</h5>
+                                                    <h2 class="wow bounceInLeft">Meet The <strong>Chess Pieces</strong></h2>
+                                                    <p>A chess piece, or chessman, is any of the six different types of movable objects used on a chessboard to play the game of chess.
+                                                        In the first context, each of the two players begins with the following sixteen pieces in a standard game:<br />
+                                                        <strong>
+                                                            1 king ,1 queen<br />
+                                                            2 rooks ,2 bishops<br />
+                                                            2 knights ,8 pawns<br />
+                                                        </strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!--chess item caresoul-->
+                                        <div class="col-md-6">
+                                            <div id="right-caresoul">
+
+                                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                                    <ol class="carousel-indicators">
+                                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                                    </ol>
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active">
+                                                            <img class="d-block w-100" src="image/king1.png" alt="First slide">
+                                                            <div class="carousel-caption d-none d-md-block">
+                                                                <h5>King</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class="d-block w-100" src="image/queen1.png" alt="Second slide">
+                                                            <div class="carousel-caption d-none d-md-block">
+                                                                <h5>Queen</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class="d-block w-100" src="image/rook.jpg" alt="Third slide">
+                                                            <div class="carousel-caption d-none d-md-block">
+                                                                <h5>Rook</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class="d-block w-100" src="image/bish.png" alt="Forth slide">
+                                                            <div class="carousel-caption d-none d-md-block">
+                                                                <h5>Bishop</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class="d-block w-100" src="image/knight.jpg" alt="Fifth slide">
+                                                            <div class="carousel-caption d-none d-md-block">
+                                                                <h5>Knight</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item">
+                                                            <img class="d-block w-100" src="image/pawn.jpg" alt="Sixth slide">
+                                                            <div class="carousel-caption d-none d-md-block">
+                                                                <h5>Pawn</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        <span class="sr-only">Previous</span>
+                                                    </a>
+                                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        <span class="sr-only">Next</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+
+                <!-- Start Statement Section-->
+                <section id="statement">
+                    <div class="content-box-lg">
+
+                        <div class="container">
+
+                            <div class="row">
+
+                                <div class="col-md-12">
+
+                                    <div id="chess-statement" class="text-center">
+                                        <h3 class="wow fadeIn"><i class="fa fa-quote-left"></i> In chess, knowledge is a very transient thing.<br /> It changes so fast that even a single mouse-slip sometimes changes the evaluation <i class="fa fa-quote-right"></i></h3>
+                                        <p style="color: #fff ;">- Viswanathan Anand -</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- End Statement Section-->
+
+                </section>
+
+                <!-- Start Chess Rules -->
+                <section id="chess-rules">
+                    <!--chessrule-part1-->
+                    <div id="chess-rules-1">
+
+                        <div class="content-box-lg">
+
+                            <div class="container">
+
+                                <div class="row">
+
+                                    <div class="col-md-12 text-center">
+                                        <div class="horizontal-heading">
+                                            <h5>Chess Rules</h5>
+                                            <h2 class="wow bounceInDown" data-wow-duration="1s"><strong>General Chess Rules</strong></h2>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <!--left side-->
+                                    <div class="col-md-7">
+                                        <img src="image/chess-rule.png" alt="rule" class="img-fluid wow bounceInLeft" data-wow-duration="2.5s">
+
+                                    </div>
+
+                                    <!--right side-->
+                                    <div class="col-md-5">
+
+                                        <!--Rule 1-->
+                                        <div class="rule" id="margin">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <div class="icon text-right">
+                                                        <i class="fa fa-crosshairs wow bounceInRight"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-10 wow bounceInRight" id="rule-border" data-wow-duration="2s">
+                                                    <h3>Rule 1</h3>
+                                                    <p>White is always first to move and players take turns alternately moving one piece at a time. Movement is required. If a player´s turn is to move, he is not in check but has no legal moves, this situation is called “Stalemate” and it ends the game in a draw.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!--Rule 2-->
+                                        <div class="rule" id="margin">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <div class="icon text-right">
+                                                        <i class="fa fa-crosshairs wow bounceInRight"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-10  wow bounceInRight" id="rule-border" data-wow-duration="2s">
+                                                    <h3>Rule 2</h3>
+                                                    <p>Each type of piece has its own method of movement. A piece may be moved to another position or may capture an opponent´s piece, replacing on its square (en passant being the only exception).</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!--Rule 3-->
+                                        <div class="rule" id="margin">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <div class="icon text-right">
+                                                        <i class="fa fa-crosshairs wow bounceInRight"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-10  wow bounceInRight" data-wow-duration="2s">
+                                                    <h3>Rule 3</h3>
+                                                    <p>When a king is threatened with capture (but can protect himself or escape), it´s called check. If a king is in check, then the player must make a move that eliminates the threat of capture and cannot leave the king in check.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+
+                                    <div class="col-md-12 text-center">
+                                        <div class="horizontal-heading">
+                                            <h2 class="wow bounceInDown" data-wow-duration="1s"><strong>Special Chess Rules</strong></h2>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <!--left side-->
+                                    <div class="col-md-7">
+                                        <img src="image/gif/castling1.gif" alt="rule" class="img-fluid"><br /><br /><br /><br /><br />
+                                        <img src="image/gif/en_passant.gif" alt="rule" class="img-fluid"><br /><br />
+                                        <img src="image/gif/promotion1.gif" alt="rule" class="img-fluid">
+
+                                    </div>
+
+                                    <!--right side-->
+                                    <div class="col-md-5">
+
+                                        <!--Rule 4-->
+                                        <div class="rule">
+                                            <div class="row">
+                                                <div class="col-md-2">
+
+                                                    <div class="icon text-right">
+                                                        <i class="fa fa-crosshairs wow bounceInRight"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-10 wow bounceInRight" id="special-rule" data-wow-duration="2s">
+
+                                                    <h3>Castling</h3>
+                                                    <p>
+                                                        During the castling, the king moves two squares towards the rook he intends to castle with, and the rook moves to the square through which the king passed.
+
+                                                        Castling is only permissible if all of the following conditions hold:<br />
+
+                                                        (1) Neither king nor rook involved in castling may have moved from the original position;
+                                                        There must be no pieces between the king and the rook;<br />
+                                                        (2) The king may not currently be in check, nor may the king pass through or end up in a square that is under attack by an enemy piece </p><br><br><br><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!--Rule 5-->
+                                        <div class="rule">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <div class="icon text-right">
+                                                        <i class="fa fa-crosshairs wow bounceInRight "></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-10 wow bounceInRight" id="special-rule" data-wow-duration="2s">
+                                                    <h3>En Passant</h3>
+                                                    <p>En Passant may only occur when a pawn is moved two squares on its initial movement. When this happens, the opposing player has the option to take the moved pawn “en passant” as if it had only moved one square. This option, though, only stays open for one move.<br />
+                                                        The En Passant move was developed after pawns were allowed to move more than one square on their initial move. The idea behind this rule was to retain restrictions imposed by slow movement, while at the same time speeding up the game.</p><br><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!--Rule 3-->
+                                        <div class="rule">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <div class="icon text-right">
+                                                        <i class="fa fa-crosshairs wow bounceInRight"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-10 wow bounceInRight" data-wow-duration="2s">
+                                                    <h3>Pawn promotion</h3>
+                                                    <p>If a pawn reaches the opponent´s edge of the table, it will be promoted – the pawn may be converted to a queen, rook, bishop or knight, as the player desires. The choice is not limited to previously captured pieces. Thus its´ theoretically possible having up to nine queens or up to ten rooks, bishops, or knights if all pawns are promoted.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End chessrule-part1-->
+
+
+                    <!--Start chessrule-part2-->
+                    <div id="chess-rules-1">
+
+                        <div class="content-box-md">
+
+                            <!-- rule tab-1 -->
+                            <div id="rule-tabs">
+
+                                <div class="container">
+                                    <div class="row">
+
+                                        <div class="col-md-12 text-center">
+                                            <div class="horizontal-heading">
+                                                <h2 class="wow bounceInDown" data-wow-duration="1s"><strong>Chess Moves</strong></h2>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="image/gif/king.gif" alt="king" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="tab-bg rule-border">
+                                                <h2>01</h2>
+                                                <h3>King</h3>
+                                                <p>King can move exactly one square horizontally, vertically, or diagonally. At most once in every game, each king is allowed to make a special move, known as castling.</p>
+                                                <div id="rule2-btn">
+                                                    <a class="btn btn-outline-dark btn-rule" href="https://en.wikipedia.org/wiki/King_(chess)" title="know more" role="button">Know More</a>
+
+                                                </div><br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- rule tab-2 -->
+                            <div id="rule-tab-2" class="rule-tab">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="image/gif/queen.gif" alt="queen" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="tab-bg rule-border">
+                                                <h2>02</h2>
+                                                <h3>Queen</h3>
+                                                <p>Queen can move any number of vacant squares diagonally, horizontally, or vertically.</p>
+                                                <div id="rule2-btn">
+                                                    <a class="btn btn-outline-dark btn-rule" href="https://en.wikipedia.org/wiki/Queen_(chess)" title="know more" role="button">Know More</a>
+                                                </div><br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- rule tab-3 -->
+                            <div id="rule-tab-3" class="rule-tab">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="image/gif/rook.gif" alt="rook" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="tab-bg rule-border">
+                                                <h2>03</h2>
+                                                <h3>Rook</h3>
+                                                <p>Rook can move any number of vacant squares vertically or horizontally. It also is moved while castling.</p>
+                                                <div id="rule2-btn">
+                                                    <a class="btn btn-outline-dark btn-rule" href="https://en.wikipedia.org/wiki/Rook_(chess)" title="know more" role="button">Know More</a>
+                                                </div><br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- rule tab-4 -->
+                            <div id="rule-tab-4" class="rule-tab">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="image/gif/bishop.gif" alt="bishop" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="tab-bg rule-border">
+                                                <h2>04</h2>
+                                                <h3>Bishop</h3>
+                                                <p>Bishop can move any number of vacant squares in any diagonal direction.</p>
+                                                <div id="rule2-btn">
+                                                    <a class="btn btn-outline-dark btn-rule" href="https://en.wikipedia.org/wiki/Bishop_(chess)" title="know more" role="button">Know More</a>
+                                                </div><br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- rule tab-5 -->
+                            <div id="rule-tab-5" class="rule-tab">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="image/gif/knight.gif" alt="knight" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="tab-bg rule-border">
+                                                <h2>05</h2>
+                                                <h3>Knight</h3>
+                                                <p>Knight can move one square along any rank or file and then at an angle. The knight´s movement can also be viewed as an “L” or “7″ laid out at any horizontal or vertical angle.</p>
+                                                <div id="rule2-btn">
+                                                    <a class="btn btn-outline-dark btn-rule" href="https://en.wikipedia.org/wiki/Knight_(chess)" title="know more" role="button">Know More</a>
+                                                </div><br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- rule tab-6 -->
+                            <div id="rule-tab-6" class="rule-tab">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="image/gif/pown.gif" alt="pown" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="tab-bg rule-border">
+                                                <h2>06</h2>
+                                                <h3>Pawn</h3>
+                                                <p>Pawns can move forward one square, if that square is unoccupied. If it has not yet moved, the pawn has the option of moving two squares forward provided both squares in front of the pawn are unoccupied. A pawn cannot move backward. Pawns are the only pieces that capture differently from how they move. They can capture an enemy piece on either of the two spaces adjacent to the space in front of them (i.e., the two squares diagonally in front of them) but cannot move to these spaces if they are vacant. The pawn is also involved in the two special moves en passant and promotion.</p>
+                                                <div id="rule2-btn">
+                                                    <a class="btn btn-outline-dark btn-rule" href="https://en.wikipedia.org/wiki/Pawn_(chess)" title="know more" role="button">Know More</a>
+                                                </div><br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Start Chess Rank  -->
+
+                <section id="ranking">
+
+                    <div id="rank">
+                        <div class="content-box-lg">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <div class="horizontal-heading">
+                                            <h2 class="wow bounceInDown" data-wow-duration="1s">Chess Ranking</h2>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="vertical-heading">
+                                            <h5>Chess Ranking</h5>
+                                            <h2 class="wow bounceInLeft" data-wow-duration="2s"><strong>World Top 10</strong></h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+
+                                        <div id="rank-slider">
+
+                                            <!--ranking1-->
+                                            <div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
+                                                <div id="rank1">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h3>Magnus Carlsen</h3>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="number text-right ">
+                                                                <i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">1</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>Magnus Carlsen is the current World Chess Champion. To many people, he’s the best to ever play the game, although Garry Kasparov and Bobby Fischer remain in the conversation. At any rate, the clear and remarkable point is that before turning 30 years old, Carlsen has already earned a spot at the...<a href="https://en.wikipedia.org/wiki/Magnus_Carlsen">know more</a></p>
+                                                    <div class="author">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <img src="image/rank/1carlsen.jpg" alt="rank1" class="img-fluid img-rounded">
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <div class="author-name-des">
+                                                                    <p><b>Rating: 2872</b></p>
+                                                                    <p><b>Country: Norway</b></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--ranking 2-->
+                                            <div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
+                                                <div id="rank1">
+
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h3>Fabiano Caruana</h3>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="number text-right">
+                                                                <i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">2</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>The prodigy who broke the record for Hikaru Nakamura of America's youngest chess grandmaster, Fabiano Caruana climbed the mountain of chess and reached the summit. This young great master has had a ranking as high as number 2 in the world and has won numerous tournaments in his career. In 2018, the American...<a href="https://en.wikipedia.org/wiki/Fabiano_Caruana">know more</a></p>
+                                                    <div class="author">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <img src="image/rank/2fabiano.jpg" alt="rank1" class="img-fluid img-rounded">
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <div class="author-name-des">
+                                                                    <p><b>Rating: 2822</b></p>
+                                                                    <p><b>Country: United States</b></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <!--ranking 3-->
+                                            <div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
+                                                <div id="rank1">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h3>Ding Liren</h3>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="number text-right">
+                                                                <i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">3</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>Ding Liren is a Chinese super grandmaster who many people consider to be a primary contender for Magnus Carlsen’s world title. Ding won his first Chinese Chess Championship at the age of 16, making him the youngest to ever do so. In the 2017 and 2019 Chess World Cup, he became the first player...<a href="https://en.wikipedia.org/wiki/Ding_Liren">know more</a></p>
+                                                    <div class="author">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <img src="image/rank/3dinglaren.jpg" alt="rank1" class="img-fluid img-rounded">
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <div class="author-name-des">
+                                                                    <p><b>Rating: 2805</b></p>
+                                                                    <p><b>Country: China</b></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--ranking 4-->
+                                            <div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
+                                                <div id="rank1">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h3>Alexander Grischuk</h3>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="number text-right">
+                                                                <i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">4</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>Alexander Grischuk is a Russian super grandmaster who is consistently among the world’s best players. While he’s an elite professional chess player, Grischuk is well-known for being one of the top blitz players. He’s a three-time World Blitz Champion, making him only one of two players...<a href="https://en.wikipedia.org/wiki/Alexander_Grischuk">know more</a></p>
+                                                    <div class="author">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <img src="image/rank/4alexander.jpg" alt="rank1" class="img-fluid img-rounded">
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <div class="author-name-des">
+                                                                    <p><b>Rating: 2777</b></p>
+                                                                    <p><b>Country: Russia</b></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <!--ranking 5-->
+                                            <div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
+                                                <div id="rank1">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h3>Ian Nepomniachtchi</h3>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="number text-right">
+                                                                <i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">5</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>The Russian superstar Ian Nepomniachtchi is knocking on the door of the elite players in the world. Currently rated right inside of the top 30 players in the world, he has had great success in tournaments and did it in a fairly short amount of time. Having been born in the same year as elite super-GMs...<a href="https://en.wikipedia.org/wiki/Ian_Nepomniachtchi">know more</a></p>
+                                                    <div class="author">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <img src="image/rank/5ian.jpg" alt="rank1" class="img-fluid img-rounded">
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <div class="author-name-des">
+                                                                    <p><b>Rating: 2774</b></p>
+                                                                    <p><b>Country: Russia</b></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <!--ranking 6-->
+                                            <div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
+                                                <div id="rank1">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h3>Levon Aronian</h3>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="number text-right">
+                                                                <i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">6</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>Levon Aronian is an Armenian super grandmaster who has long been among the world’s best players. He first entered the top 20 in 2005 and still hasn’t lost that distinction. Most of those 15 years or so have been spent in the top 10. Aronian has been a model for steady, elite-level chess...<a href="https://en.wikipedia.org/wiki/Levon_Aronian">know more</a></p>
+                                                    <div class="author">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <img src="image/rank/6levon.jpg" alt="rank1" class="img-fluid img-rounded">
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <div class="author-name-des">
+                                                                    <p><b>Rating: 2773</b></p>
+                                                                    <p><b>Country: Armenia</b></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--ranking 7-->
+                                            <div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
+                                                <div id="rank1">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h3>Maxime Vachier-Lagrave</h3>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="number text-right">
+                                                                <i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">7</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        Maxime Vachier-Lagrave (also known as “MVL”) is a French super grandmaster who, since 2016, has spent plenty of time rated among the top five chess players in the world. His rating peaked at 2819 in August 2016, making him the seventh-highest rated player in history. Vachier-Lagrave is a...<a href="https://en.wikipedia.org/wiki/Maxime_Vachier-Lagrave">know more</a></p>
+                                                    <div class="author">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <img src="image/rank/7maxi.jpg" alt="rank1" class="img-fluid img-rounded">
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <div class="author-name-des">
+                                                                    <p><b>Rating: 2770</b></p>
+                                                                    <p><b>Country: Azerbaijan</b></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--ranking 8-->
+                                            <div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
+                                                <div id="rank1">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h3>Shakhriyar Mamedyarov</h3>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="number text-right">
+                                                                <i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">8</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>As Azerbaijan’s top player, Grandmaster Shakhriyar Mamedyarov has ascended to become one of the elite chess players in the world. He started off when he was young and became the only player ever to win the World Junior Championship twice. But he didn’t stop there. is incredible chess strength...<a href="https://en.wikipedia.org/wiki/Shakhriyar_Mamedyarov">know more</a></p>
+                                                    <div class="author">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <img src="image/rank/8shakh.jpg" alt="rank1" class="img-fluid img-rounded">
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <div class="author-name-des">
+                                                                    <p><b>Rating: 2768</b></p>
+                                                                    <p><b>Country: Netherlands</b></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--ranking 9-->
+                                            <div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
+                                                <div id="rank1">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h3>Anish Giri</h3>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="number text-right">
+                                                                <i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">9</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>Anish Giri is the Netherlands premier chess prodigy. Giri started to play chess at the age of 6 years old and became a FIDE Master in 2008 at the age of 14. Within a year of becoming a FIDE Master he became an International Grandmaster at the young age of 14 years, 7 months and 2 days in 2009. When...<a href="https://en.wikipedia.org/wiki/Anish_Giri">know more</a></p>
+                                                    <div class="author">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <img src="image/rank/9anish.jpg" alt="rank1" class="img-fluid img-rounded">
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <div class="author-name-des">
+                                                                    <p><b>Rating: 2768</b></p>
+                                                                    <p><b>Country: Netherlands</b></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--ranking 10-->
+                                            <div class="rank wow rotateInUpRight" data-wow-duration="2.5s">
+                                                <div id="rank1">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h3>Wesley So</h3>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="number text-right">
+                                                                <i class="fa fa-hashtag fa-2x"></i><b style="font-size: 30px">10</b>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p>Wesley So is a Filipino-American super grandmaster who is among the world’s best chess players. He began as a chess prodigy who entered tournaments at nine years old. At 14, he became the ninth youngest GM in history. The next year, he became the youngest player to pass the 2600 rating threshold,...<a href="https://en.wikipedia.org/wiki/Wesley_So">know more</a></p>
+                                                    <div class="author">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <img src="image/rank/10wesley.jpg" alt="rank1" class="img-fluid img-rounded">
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <div class="author-name-des">
+                                                                    <p><b>Rating: 2765</b></p>
+                                                                    <p><b>Country: United State</b></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!--  Start Chess Blogs  -->
+
+                <section id="blog">
+                    <div class="content-box-md">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5">
+
+                                    <div id="blog-left">
+
+                                        <div class="vertical-heading">
+                                            <h5>Latest News</h5>
+                                            <h2 class="wow bounceInLeft" data-wow-duration="1s">Latest<br />From<strong> Blog</strong></h2>
+                                        </div>
+                                        <p style="font-family:'Montserrat', sans-serif;">What's the most fun you've had with a chess variant? Perhaps like me, it's playing bughouse, which is not only innately fascinating, but a good way to make friends and interact with people who are not solely interested in taking all of your elo points.</p>
+                                        <div class="blog-btn">
+                                            <a href="https://www.chess.com/blogs" class="btn btn-dark" role="button">View All Posts</a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-7">
+
+                                    <div class="blog-right">
+                                        <div class="row">
+
+                                            <!--blog post 1-->
+                                            <div class="col-md-6 blog-post wow flipInX " id="hover-blog-1" data-wow-duration="2s">
+                                                <h4>The Top 10 Chess Games of the 2010s! </h4>
+                                                <p>The 2010s were an AMAZING decade for chess. Magnus Carlsen dominated the majority of the decade and made a strong case that he is the greatest chess player of all time. If he is as dominant in the 2020s as he was in the 2010s, there will be zero doubt that he is the greatest chess player of all time...</p>
+                                                <a href="https://www.chess.com/blog/SamCopeland/the-top-10-chess-games-of-the-2010s-and-honorable-mentions">Read More ></a>
+                                                <div class="row">
+
+                                                    <div class="col-md-6 post-meta">
+                                                        <p><i class="fa fa-user"></i> SamCopeland
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-6 post-meta">
+                                                        <p class="text-center">Jan 8, 2020</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!--blog post 2-->
+                                            <div class="col-md-6 blog-post wow flipInX" id="hover-blog-2" data-wow-duration="2s">
+                                                <h4>Learn chess and help contribute to science in the process!</h4>
+                                                <p>Hi! Thanks for stopping by to check out this experiment. My name is Elliot and I’m a third year psych student at Cal State Northridge. I’m interested in researching how our thoughts and feelings impact our gaming experience.</p>
+                                                <a href="https://www.chess.com/blog/ecuite/learn-chess-and-help-contribute-to-science-in-the-process-1">Read More ></a>
+
+                                                <div class="row">
+                                                    <div class="col-md-6 post-meta">
+                                                        <p><i class="fa fa-user"></i> ecuite
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-6 post-meta">
+                                                        <p class="text-center">Jan 9, 2020</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End -->
+                </section>
+
+
+
+                <!--  Start More  -->
+
+                <section id="more">
+                    <div class="content-box-md">
+                        <div class="container">
+                            <div class="">
+                                <div class="col-md-12">
+                                    <div class="horizontal-heading text-center">
+                                        <h2 class="wow bounceInDown" data-wow-duration="1s">Chess Tips</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-md-5">
+
+                                    <div id="more-left">
+
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><i class="fa fa-hashtag"></i><b>1</b></h5>
+                                                <h6 class="card-subtitle mb-2 text-muted">LEARN THE MOVES</h6>
+                                                <p class="card-text">Each chess piece can move only a certain way. For instance, a pawn moves straight ahead but can only attack on an angle, one square at a time. A knight’s move is L-shaped. The bishop moves at an angle but can move more than one square at a time. The rook (castle) can move only in a straight line but can go forward, back or to the side. The queen, the most powerful piece, can move in any direction for any number of squares, but not two directions in one move. And the king moves at a stately pace — as a king should — one square at a time in any direction.</p>
+                                                <a href="#" class="card-link">Know More</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="card" style="width: 18rem;">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><i class="fa fa-hashtag"></i><b>2</b></h5>
+                                                <h6 class="card-subtitle mb-2 text-muted">OPEN WITH A PAWN</h6>
+                                                <p class="card-text">Move the pawn in front of either the king or queen two squares forward. (Only on its opening move can a pawn move two squares.) This opens pathways for your bishops and queen to enter the game. They move on an angle and can’t get out onto the field of battle if pawns are in the way..</p>
+                                                <a href="https://boyslife.org/hobbies-projects/funstuff/5486/10-tips-to-become-a-chess-champ/" class="btn btn-dark">View More</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-7">
+
+                                    <div class="blog-right">
+                                        <div class="row">
+
+                                            <!--More 1-->
+                                            <div class="col-md-6 blog-post">
+
+                                                <div class="vertical-heading">
+                                                    <h4 style="color: blue; border-bottom: 1px solid #6c757d">Useful Links</h4>
+                                                </div>
+
+
+                                                <h6>Tournament Links:</h6>
+                                                <p>
+                                                    <a href="www.uschess.org">
+                                                        <center>www.uschess.org</center>
+                                                    </a>
+                                                </p>
+                                                <p>
+                                                    <a href="www.chessintheschools.org">
+                                                        <center>www.chessintheschools.org</center>
+                                                    </a>
+                                                </p>
+
+                                                <h6>More Chess Programs:</h6>
+                                                <p>
+                                                    <a href="www.lichessmates.com">
+                                                        <center>www.lichessmates.com</center>
+                                                    </a>
+                                                </p>
+                                                <p>
+                                                    <a href="www.lichesskids.com ">
+                                                        <center>www.lichesskids.com</center>
+                                                    </a>
+                                                </p>
+
+                                                <h6>Online Chess:</h6>
+                                                <p>
+                                                    <a href="www.chess.com">
+                                                        <center>www.chess.com</center>
+                                                    </a>
+                                                </p>
+                                                <p>
+                                                    <a href="www.chesskid.com">
+                                                        <center>www.chesskid.com</center>
+                                                    </a>
+                                                </p>
+
+                                                <h6>Chess News:</h6>
+                                                <p>
+                                                    <a href="www.chessbase.com">
+                                                        <center>www.chessbase.com</center>
+                                                    </a>
+                                                </p>
+                                            </div>
+
+
+                                            <!--More 2-->
+                                            <div class="col-md-6 blog-post">
+
+                                                <div id="head-news">
+                                                    <center><i class="fa fa-envelope fa-4x wow swing infinite" data-wow-duration="2s"></i></center>
+                                                    <p style="text-transform: uppercase; text-align: center;margin-top: 10px; font-family:Montserrat; font-weight: 1000">join our newsletter</p>
+                                                    <p id="newsletter">Subscribe Our newsletter to receive the latest news and update of chess world every week.<br /> No Spam
+                                                    </p>
+                                                </div>
+
+
+                                                <!--Contact form-->
+                                                <div id="contact-form">
+                                                    <form autocomplete="on" action="#">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+
+                                                                <input type="text" class="form-control" placeholder="Enter your email">
+
+                                                                <button class="button wow pulse infinite" style="vertical-align:middle" data-wow-duration="3s" onclick="myFunction()"><span>SUBSCRIBE</span></button>
+
+                                                            </div>
+                                                        </div>
+                                                        <p><a href="#">no thanks</a></p>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End -->
+                </section>
+
+                <!-- Footer -->
+
+                <footer class="text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="item">
+                                    <div class="col-lg-12">
+                                        <div class="copy text-center">
+                                            <div class="social">
+                                                <a href="https:facebook.com/raj.c.lanjewar" class="icon">
+                                                    <i class="fa fa-facebook-f"></i>
+                                                </a>&nbsp;
+                                                <a href="https://github.com/lanjewarraj" class="icon">
+                                                    <i class="fa fa-github"></i>
+                                                </a>&nbsp;
+                                                <a href="https://www.linkedin.com/in/raj-lanjewar-876b11164/" class="icon">
+                                                    <i class="fa fa-linkedin"></i>
+                                                </a>&nbsp;
+                                                <a href="https://www.instagram.com" class="icon">
+                                                    <i class="fa fa-instagram"></i>
+                                                </a>&nbsp;
+                                                <a href="https://www.yutube.com/rajlanjewar" class="icon">
+                                                    <i class="fa fa-youtube"></i>
+                                                </a>
+                                            </div>
+                                            <p>Copyright &copy; 2020 All Right Reserved By<span> Raj C Lanjewar</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+                <!--  End Footer -->
+
+                <!-- Back to top -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="btn-back-to-top">
+                                <a href="#home"><i class="fa fa-angle-double-up "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--End Back to top -->
+
+
+                <script>
+                    var loader = document.getElementById('loading');
+
+                    function loadFun() {
+                        loader.style.display = "none";
+                    }
+                </script>
+
+                <!--jquery-->
+                <script src="js/jquery.js"></script>
+                <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+                <!--responsive tabs-->
+                <script src="js/responsive-tabs/jquery.responsiveTabs.min.js"></script>
+
+
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+                <!--bootstrap js-->
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+                <!-- wow js -->
+                <script src="js/wow/wow.min.js"></script>
+                <script>
+                    new WOW().init();
+                </script>
+
+                <!--custom js-->
+                <script src="js/script.js">
+
+                </script>
+                <script>
+                    function myFunction() {
+                        alert("Thanks For Subscribing Newsletter");
+                    }
+                </script>
+
+</body></html>
